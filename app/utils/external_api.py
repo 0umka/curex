@@ -1,4 +1,4 @@
-from api.schemas.currency import Currency
+from ..api.schemas.currency import Currency
 
 def get_currency_info(response):
     '''

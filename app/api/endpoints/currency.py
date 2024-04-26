@@ -1,9 +1,8 @@
 from fastapi import APIRouter, Depends
-from api.schemas.currency import Currency
-from core.security import get_user_from_token
+from . import Currency
+from .. import get_user_from_token, get_currency_info, get_trading_info
 import requests
 import json
-from utils.external_api import get_currency_info, get_trading_info
 
 cur = APIRouter()
 
