@@ -1,7 +1,7 @@
 import jwt
 from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
-from core.config import EXPIRATION_TIME, CURRENT_TIME, SECRET_KEY, ALGORITHM
+from .config import EXPIRATION_TIME, CURRENT_TIME, SECRET_KEY, ALGORITHM
 
 auth = APIRouter()
 
