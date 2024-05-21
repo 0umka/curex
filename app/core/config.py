@@ -4,7 +4,7 @@ import os
 
 load_dotenv()
 
-SECRET_KEY = "123"#os.environ['SECRET_KEY']
-ALGORITHM = "123"#os.environ['ALGORITHM']
+SECRET_KEY = os.environ['SECRET_KEY']
+ALGORITHM = os.environ['ALGORITHM']
 CURRENT_TIME = datetime.now()
 EXPIRATION_TIME = timedelta(minutes=15)
