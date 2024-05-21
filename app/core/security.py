@@ -5,7 +5,7 @@ from .config import EXPIRATION_TIME, CURRENT_TIME, SECRET_KEY, ALGORITHM
 
 auth = APIRouter()
 
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="login")
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="auth/login")
 
 async def create_jwt_token(data: dict):
     data.update({"exp": CURRENT_TIME + EXPIRATION_TIME})
